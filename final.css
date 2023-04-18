@@ -1,0 +1,62 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' , sans-serif;
+    box-sizing:border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pexels-evie-shaffer-2395249.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    position: relative;
+    
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+
+}
+
+.content{
+    top: 45%;
+    position: absolute;
+    transform: translateY(-10%);
+    color: #690b0b;
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.countdown-time{
+    display: flex;
+}
+.countdown-time div{
+    flex-basis: 100px;
+}
+.countdown-time div{
+    font-size: 6opx;
+    margin-bottom: -14px;
+}
+.bells{
+    width: 150px;
+    position: absolute;
+    right: -80%;
+    bottom: 0;
+    animation: bells 4s linear infinite;
+}
+@keyframes bells{
+    0%{
+        bottom: 0;
+        opacity: 0;
+    
+    }
+    100%{
+        bottom: 105%;
+        opacity: 1;
+    }
+}
